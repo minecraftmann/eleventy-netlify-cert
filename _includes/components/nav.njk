@@ -1,3 +1,4 @@
+<!--
 <nav>
   {% set navPages = collections.all | eleventyNavigation %}
   <ul>
@@ -7,4 +8,32 @@
     </li>
   {%- endfor %}
   </ul>
+</nav>
+-->
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item"><img style="max-height:initial; height: 55px" src="logo.png"></a>
+      <a role="button" class="navbar-burger burger" aria-label="menu" style="height:initial" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-end" >
+        <a class="navbar-item">Research and Evaluation Services</a>
+        <a class="navbar-item">Publications and Reports</a>
+        <a class="navbar-item">Our Mission and Values</a>
+        <a class="navbar-item">Join CERT</a>
+        <a class="navbar-item">Blog</a>
+        <a class="navbar-item">
+          <span class="icon has-text-link">
+            <i class="fab fa-facebook-square"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
 </nav>
