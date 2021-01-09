@@ -37,4 +37,22 @@ collections:
         fields:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Body", name: "body", widget: "markdown" }    
+  - name: "settings"
+    label: "Settings"
+    editor:
+      preview: false
+    files:
+      - label: "Navigation"
+        name: "items"
+        file: "src/_data/navigation.yaml"
+        fields:
+          - { label: "Image", name: "logo", widget: "image"}
+          - label: Nav Items
+            name: items
+            widget: list
+            allow_add: false
+            collapsed: false
+            fields:
+              - { label: Title, name: text, widget: string }
+              - { label: URL, name: url, widget: string }
